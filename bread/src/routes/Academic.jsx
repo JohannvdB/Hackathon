@@ -71,8 +71,7 @@ export default function Academic() {
 
 return(
     <>
-        <h1>{academic.name}</h1>
-        <h2> {academic.specialisation}</h2>
+        <h1>Academic</h1>
 
         <Form method='post' onSubmit={submit}>
             Select Student: <Select options={students} labelField='urn' valueField='name' onChange={StudentInput} />

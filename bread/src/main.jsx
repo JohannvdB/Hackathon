@@ -8,13 +8,27 @@ import {
 import Login from "./routes/login"
 import Convener from "./routes/convener";
 import Academic from "./routes/Academic";
+import Student from "./routes/student"
+import Root from "./routes/root"
 import './index.css'
 
 
 let router = createBrowserRouter([
   {
     path: "/",
+    element: <Root />
+  },
+  {
+    path: "/convener",
     element: <Convener />
+  },
+  {
+    path: "/academic",
+    element: <Academic />
+  },
+  {
+    path: "/student",
+    element: <Student />
   }
 ])
 
